@@ -2,7 +2,7 @@
 mapboxgl.accessToken = mapToken;
       
         const map = new mapboxgl.Map({
-        accessToken: 'pk.eyJ1IjoicHJpeWEwNSIsImEiOiJjbXZjanlmMXgwYzhwNDhxeTNka2duZHJlIn0.4eIcaRlk3R_o1WhMcW243Q',
+        accessToken: process.env.MAP_TOKEN,
         container: 'map', // container ID
         style: "mapbox://styles/mapbox/streets-v12", //style URL
         center: listing.geometry.coordinates, // starting position [lng, lat]. Note that lat must be set between -90 and 90
